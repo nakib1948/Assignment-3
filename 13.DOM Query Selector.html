@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Select Paragraphs by Class Example</title>
+    <style>
+      .selected {
+        color: red;
+      }
+    </style>
+    <script>
+      function selectAndChangeColor() {
+        const paragraphs = document.querySelectorAll(".selected-paragraph");
+        paragraphs.forEach((paragraph) => {
+          paragraph.style.color = "red";
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Select Paragraphs by Class Example</h1>
+    <button onclick="selectAndChangeColor()">Select Paragraphs</button>
+
+    <p class="selected-paragraph">Paragraph 1</p>
+    <p class="selected-paragraph">Paragraph 2</p>
+    <p class="other-paragraph">Paragraph 3</p>
+    <p id="unique-paragraph">Paragraph 4</p>
+  </body>
+</html>
